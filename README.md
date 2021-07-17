@@ -35,11 +35,20 @@ the same pair id.(If you are confused with style, please refer to issue#10.)</li
 </ul>
 <h2><b>Results of Cloth Category Recognition Model</b></h2>
 <br>
-<br>
+<p>Mask R-CNN is an instance segmentation technique which locates each pixel of every object in the image instead of the bounding boxes. Mainly it has two stages: region proposals and then classifying the proposals and generating bounding boxes and masks.It also uses the Region Proposal Network (RPN) which scans all FPN top to bottom and proposes regions which may contain objects. It uses anchors which are a set of boxes with predefined locations and scales itself according to the input images. Individual anchors are assigned to the ground-truth classes and bounding boxes. RPN generates two outputs for each anchor - anchor class and bounding box specifications. The anchor class is either foreground class or Background Class. Another module that is different in Mask R-CNN is the ROI Pooling. </p> <br><br>
 <img src="https://user-images.githubusercontent.com/39325832/126036361-3ff8fcdc-4f3f-4734-a724-cd27f1e2b7fa.PNG"/>
 <h2><b>Results of Cycle Gan</b></h2>
 <br>
-<br>
+<p>
+Cycle-GAN is an approach to training image-to-image translation models using
+the generative adversarial network, or GAN, model architecture. It performs the s the task of transforming an image from one domain
+to another.It uses The GAN architecture approach to train a model for image synthesis that
+is comprised of two models: a generator model and a discriminator model. The
+generator takes a point from a latent space as input and generates new plausible
+images from the domain, and the discriminator takes an image as input and predicts
+whether it is real (from a dataset) or fake (generated). Both models are trained in a
+game, such that the generator is updated to better fool the discriminator and the
+discriminator is updated to better detect generated images</p><br><br>
 <img src="https://user-images.githubusercontent.com/39325832/126036436-4e3fab6a-3c48-4046-9f6d-4dc6606ec325.PNG"/>
 
 
